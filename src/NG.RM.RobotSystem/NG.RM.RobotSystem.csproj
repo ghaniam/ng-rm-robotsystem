@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Intentionally vulnerable version (CVE-2021-24112, CRITICAL RCE) to demo trivy-scan failing the pipeline. -->
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NG.RM.RobotSystem.Core\NG.RM.RobotSystem.Core.csproj" />
+  </ItemGroup>
+
+</Project>
