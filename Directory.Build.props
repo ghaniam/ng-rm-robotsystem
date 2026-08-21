@@ -1,0 +1,12 @@
+<Project>
+
+  <!-- Shared across every project in the solution. Bump the framework here
+       once instead of in each .csproj (and keep azure-pipelines.yml's
+       UseDotNet@2 SDK version in sync with it). -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
